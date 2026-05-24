@@ -81,4 +81,6 @@ iOSInjectionProject/
 
 # End of https://www.toptal.com/developers/gitignore/api/executable,objective-c
 
-.vscode/tasks.json
+.vscode/
+bin/
+obj/
