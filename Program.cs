@@ -14,11 +14,11 @@ Console.WriteLine("valor de b:"+b);
 
 string numeroCaracter;
 
-Console.WriteLine("ingresar un numero");
-numeroCaracter = Console.ReadLine();
+Console.WriteLine("ingresar un numero"); //pido el numero
+numeroCaracter = Console.ReadLine(); //ingresa el usario una cadena de caracter y lo guardo en la variable
 
-int numero;
-bool verificacion = int.TryParse(numeroCaracter, out numero);
+int numero; //variable del numero convertido en entero
+bool verificacion = int.TryParse(numeroCaracter, out numero); //verifica si es un numero, lo convierte en int y lo guarda en "numero"
 
 if (verificacion)
 {
