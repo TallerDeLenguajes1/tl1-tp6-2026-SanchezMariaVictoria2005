@@ -1,6 +1,6 @@
 ﻿using System.IO.Compression;
 
-Console.WriteLine("Hello, World!");
+/*Console.WriteLine("Hello, World!");
 
 int a;
 int b;
@@ -45,4 +45,4 @@ if (verificacion)
 else
 {
     Console.WriteLine("la cadena ingresada no es un numero");
-}
+}*/
