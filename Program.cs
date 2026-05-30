@@ -62,7 +62,7 @@ do
     Console.WriteLine("ingrese una opcion");
     opcionCadena = Console.ReadLine();
     
-    if (int.TryParse(opcionCadena, out opcion))
+    if (int.TryParse(opcionCadena, out opcion) && opcionCadena!= "6")
     {
         Console.WriteLine("ingresar dos numeros");
         numero1C = Console.ReadLine();
@@ -72,9 +72,10 @@ do
             switch(opcion)
             {
                 case 1:
-
+                        Console.WriteLine($"resultado de la suma: {numero1 + numero2}");
                     break;
+                    
             }
         }
     }
-}while(opcion != 6);
+}while(1 <= opcion && opcion < 6);
