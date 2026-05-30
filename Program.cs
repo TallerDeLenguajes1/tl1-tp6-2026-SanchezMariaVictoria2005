@@ -24,6 +24,20 @@ if (verificacion)
 {
     Console.WriteLine("el caracter ingresado es un numero");
     Console.WriteLine($"numero: {numero}");
+
+    if (numero != 0)
+    {
+        int invertido = 0;
+        while (numero != 0)
+        {
+            invertido += numero %10;
+            numero = numero / 10;
+            if (numero != 0)
+            {
+                invertido *= 10; 
+            }
+        }
+    }
 }
 else
 {
