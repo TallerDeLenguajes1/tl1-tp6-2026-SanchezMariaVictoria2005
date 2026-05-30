@@ -74,7 +74,9 @@ do
                 case 1:
                         Console.WriteLine($"resultado de la suma: {numero1 + numero2}");
                     break;
-                    
+                case 2:
+                    Console.WriteLine($"resultado de la resta: {numero1 - numero2}");
+                    break;
             }
         }
     }
