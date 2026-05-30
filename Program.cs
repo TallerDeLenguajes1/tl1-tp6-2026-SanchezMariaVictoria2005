@@ -1,4 +1,6 @@
-﻿Console.WriteLine("Hello, World!");
+﻿using System.IO.Compression;
+
+Console.WriteLine("Hello, World!");
 
 int a;
 int b;
@@ -37,6 +39,7 @@ if (verificacion)
                 invertido *= 10; 
             }
         }
+        Console.WriteLine($"numero invertido: {invertido}");
     }
 }
 else
