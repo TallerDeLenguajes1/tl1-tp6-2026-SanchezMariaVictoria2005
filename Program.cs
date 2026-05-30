@@ -46,3 +46,35 @@ else
 {
     Console.WriteLine("la cadena ingresada no es un numero");
 }*/
+
+int opcion;
+string opcionCadena;
+string numero1C;
+string numero2C;
+int numero1;
+int numero2;
+
+do
+{
+
+    Console.WriteLine("menu de operaciones");
+
+    Console.WriteLine("ingrese una opcion");
+    opcionCadena = Console.ReadLine();
+    
+    if (int.TryParse(opcionCadena, out opcion))
+    {
+        Console.WriteLine("ingresar dos numeros");
+        numero1C = Console.ReadLine();
+        numero2C = Console.ReadLine();
+        if (int.TryParse(numero1C, out numero1) && int.TryParse(numero2C, out numero2))
+        {
+            switch(opcion)
+            {
+                case 1:
+
+                    break;
+            }
+        }
+    }
+}while(opcion != 6);
