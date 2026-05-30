@@ -80,7 +80,9 @@ do
                 case 3:
                     Console.WriteLine($"resultado del producto: {numero1 * numero2}");  
                     break;
-                
+                case 4: 
+                    Console.WriteLine($"resultado de la divicion: {numero1 / numero2}");
+                    break;
             }
         }
     }
