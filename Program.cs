@@ -82,27 +82,27 @@ do
             switch (opcion)
             {
                 case 1:
-                    Console.WriteLine(Math.Abs(numero));
+                    Console.WriteLine($"resultado del valor absoluto de {numero}: {Math.Abs(numero)}");
                 break;
                    
                 case 2:
-                     Console.WriteLine(Math.Pow(numero, 2));
+                     Console.WriteLine($"resultado del cuadrado de {numero}: {Math.Pow(numero, 2)}");
                 break;
 
                 case 3:
-                     Console.WriteLine(Math.Sqrt(numero));
+                     Console.WriteLine($" resultado de la raiz cuadrada de {numero}: {Math.Sqrt(numero)}");
                 break;
 
                 case 4:
-                     Console.WriteLine(Math.Sin(numero));
+                     Console.WriteLine($" resultado del seno de {numero}: {Math.Sin(numero)}");
                 break;
 
                 case 5:
-                     Console.WriteLine(Math.Cos(numero));
+                     Console.WriteLine($" resultado del coseno de {numero}: {Math.Cos(numero)}");
                 break;
 
                 case 7:
-                     Console.WriteLine(Math.Truncate(numero));
+                     Console.WriteLine($" resultado de la parte entera de {numero}: {Math.Truncate(numero)}");
                 break;
             }
         }
