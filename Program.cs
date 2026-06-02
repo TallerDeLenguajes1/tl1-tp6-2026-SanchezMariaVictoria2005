@@ -53,7 +53,7 @@ string numero1C;
 string numero2C;
 int numero1;
 int numero2;
-bool repite;
+bool repite = false;
 string repetirCadena;
 int repetir;
 
@@ -104,20 +104,23 @@ do
 
             Console.WriteLine("escribir 0 si quiere realizar otra operacion:");
             repetirCadena = Console.ReadLine();
-            int.TryParse(repetirCadena, out repetir);
-
-            if (repetir ==  0)
+            if ((int.TryParse(repetirCadena, out repetir)))
                 {
-                    repite = true;
-                    Console.WriteLine("ingrese una opcion");
-                    opcionCadena = Console.ReadLine();
-                    int.TryParse(opcionCadena, out opcion);
+                    if (repetir ==  0)
+                    {
+                        repite = true;
+                        Console.WriteLine("ingrese una opcion");
+                        opcionCadena = Console.ReadLine();
+                        int.TryParse(opcionCadena, out opcion);
 
+                    }
+                    else
+                    {
+                        repite = false;
+                    }
                 }
-                else
-                {
-                    repite = false;
-                }
+
+            
 
             } while (repite);
             
