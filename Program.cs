@@ -47,15 +47,15 @@ else
     Console.WriteLine("la cadena ingresada no es un numero");
 }*/
 
-int opcion;
-string opcionCadena;
-string numero1C;
-string numero2C;
-int numero1;
-int numero2;
-bool repite = false;
-string repetirCadena;
-int repetir;
+int opcion; //opcion de operaciones, forma de entero
+string opcionCadena; //opcion en forma de cadena
+string numero1C; //primer numero ingresado en forma de cadena
+string numero2C; //segundo numero ingresado en forma de cadena
+int numero1; //primer numero ingresado en forma de entero
+int numero2; //segundo numero ingresado en forma de entero
+bool repite = false; //variable para controlar si el usuario quiere realizar otra operacion
+string repetirCadena; //opcion para realizar otra operacion en forma de cadena
+int repetir; // opcion para realizar otra operacion en forma de entero
 
 do
 {
@@ -71,14 +71,14 @@ do
     Console.WriteLine("ingrese una opcion");
     opcionCadena = Console.ReadLine();
     
-    if (int.TryParse(opcionCadena, out opcion) && opcionCadena!= "6")
+    if (int.TryParse(opcionCadena, out opcion) && opcionCadena!= "6") //controla que sea un numero y sea distinto a la salida
     {
         Console.WriteLine("ingresar dos numeros");
         numero1C = Console.ReadLine();
         numero2C = Console.ReadLine();
-        if (int.TryParse(numero1C, out numero1) && int.TryParse(numero2C, out numero2))
+        if (int.TryParse(numero1C, out numero1) && int.TryParse(numero2C, out numero2)) //controla que ambos caracteres ingresados sean numeros
         {
-            do
+            do //estructura para realizar otra operacion si el usuario lo desea
             {
                  switch(opcion)
                 {
@@ -106,10 +106,10 @@ do
             repetirCadena = Console.ReadLine();
             if ((int.TryParse(repetirCadena, out repetir)))
                 {
-                    if (repetir ==  0)
+                    if (repetir ==  0) //si quiere realizar otra operacion
                     {
                         repite = true;
-                        Console.WriteLine("ingrese una opcion");
+                        Console.WriteLine("ingrese una opcion"); //ingresa el numero de la operacion
                         opcionCadena = Console.ReadLine();
                         int.TryParse(opcionCadena, out opcion);
 
@@ -123,9 +123,6 @@ do
             
 
             } while (repite);
-            
-           
-            
         }
     }
 }while(1 <= opcion && opcion < 6);
