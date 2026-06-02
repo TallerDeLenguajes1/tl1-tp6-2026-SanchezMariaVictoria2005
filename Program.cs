@@ -48,6 +48,7 @@ else
 }*/
 
 int opcion; //opcion de operaciones, forma de entero
+
 string opcionCadena; //opcion en forma de cadena
 string numero1C; //primer numero ingresado en forma de cadena
 string numero2C; //segundo numero ingresado en forma de cadena
@@ -56,14 +57,61 @@ int numero2; //segundo numero ingresado en forma de entero
 bool repite = false; //variable para controlar si el usuario quiere realizar otra operacion
 string repetirCadena; //opcion para realizar otra operacion en forma de cadena
 int repetir; // opcion para realizar otra operacion en forma de entero
-
+float numero;
 do
 {
 
     Console.WriteLine("menu de operaciones");
-    Console.WriteLine("1-suma");
+    Console.WriteLine("1-valor absoluto");
+    Console.WriteLine("2-cuadrado");
+    Console.WriteLine("3-raiz cuadrada");
+    Console.WriteLine("4-seno");
+    Console.WriteLine("5-coseno");
+    Console.WriteLine("7-parte entera de un float");
+
+    //  ingresa un solo numero
+    Console.WriteLine("ingrese una opcion");
+    opcionCadena = Console.ReadLine();
+
+    if (int.TryParse(opcionCadena, out opcion) && opcionCadena != "6")
+    {
+        Console.WriteLine("ingresar un numero");
+        numero1C = Console.ReadLine();
+        if (float.TryParse(numero1C, out numero))
+        {
+            switch (opcion)
+            {
+                case 1:
+                    Console.WriteLine(Math.Abs(numero));
+                break;
+                   
+                case 2:
+                     Console.WriteLine(Math.Pow(numero, 2));
+                break;
+
+                case 3:
+                     Console.WriteLine(Math.Sqrt(numero));
+                break;
+
+                case 4:
+                     Console.WriteLine(Math.Sin(numero));
+                break;
+
+                case 5:
+                     Console.WriteLine(Math.Cos(numero));
+                break;
+
+                case 7:
+                     Console.WriteLine(Math.Truncate(numero));
+                break;
+            }
+        }
+    }
+
+    Console.WriteLine("menu de operaciones");
+    Console.WriteLine("suma");
     Console.WriteLine("2-resta");
-    Console.WriteLine("3-multiplicacion");
+    Console.WriteLine("3-multiplicar");
     Console.WriteLine("4-divir");
     Console.WriteLine("6-salir");
     
