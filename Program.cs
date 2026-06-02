@@ -53,6 +53,9 @@ string numero1C;
 string numero2C;
 int numero1;
 int numero2;
+bool repite;
+string repetirCadena;
+int repetir;
 
 do
 {
@@ -69,21 +72,47 @@ do
         numero2C = Console.ReadLine();
         if (int.TryParse(numero1C, out numero1) && int.TryParse(numero2C, out numero2))
         {
-            switch(opcion)
+            do
             {
+                 switch(opcion)
+                {
                 case 1:
                         Console.WriteLine($"resultado de la suma: {numero1 + numero2}");
+                        
                     break;
                 case 2:
                     Console.WriteLine($"resultado de la resta: {numero1 - numero2}");
+                    
                     break;
                 case 3:
                     Console.WriteLine($"resultado del producto: {numero1 * numero2}");  
+                    
                     break;
                 case 4: 
                     Console.WriteLine($"resultado de la divicion: {numero1 / numero2}");
+                    
                     break;
-            }
+                
+
+                }
+
+            Console.WriteLine("escribir 0 si quiere realizar otra operacion:");
+            repetirCadena = Console.ReadLine();
+            int.TryParse(repetirCadena, out repetir);
+
+            if (repetir ==  0)
+                {
+                    repite = true;
+                }
+                else
+                {
+                    repite = false;
+                }
+
+            } while (repite);
+            
+           
+            
         }
     }
 }while(1 <= opcion && opcion < 6);
