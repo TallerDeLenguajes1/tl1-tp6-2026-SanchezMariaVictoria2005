@@ -108,6 +108,26 @@ do
         }
     }
 
+
+    Console.WriteLine("ingresar dos numeros");
+    numero1C = Console.ReadLine();
+    numero2C = Console.ReadLine();
+    if (int.TryParse(numero1C, out numero1) && int.TryParse(numero2C, out numero2)) //controla que ambos caracteres ingresados sean numeros
+    {
+        if (numero1 > numero2)
+        {
+            Console.WriteLine($"el maximo entre {numero1} y {numero2} es {numero1}");
+            Console.WriteLine($"el minimo entre {numero1} y {numero2} es {numero2}");
+        }
+        else if (numero1 < numero2)
+        {
+            Console.WriteLine($"el maximo entre {numero1} y {numero2} es {numero2}");
+            Console.WriteLine($"el minimo entre {numero1} y {numero2} es {numero1}");
+        }
+
+    }
+
+
     Console.WriteLine("menu de operaciones");
     Console.WriteLine("suma");
     Console.WriteLine("2-resta");
