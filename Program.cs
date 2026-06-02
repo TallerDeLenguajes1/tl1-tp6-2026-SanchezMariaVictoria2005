@@ -103,6 +103,10 @@ do
             if (repetir ==  0)
                 {
                     repite = true;
+                    Console.WriteLine("ingrese una opcion");
+                    opcionCadena = Console.ReadLine();
+                    int.TryParse(opcionCadena, out opcion);
+
                 }
                 else
                 {
