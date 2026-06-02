@@ -125,7 +125,7 @@ do
             Console.WriteLine($"el minimo entre {numero1} y {numero2} es {numero1}");
         }
 
-    }
+    } //funcionando
 
 
     Console.WriteLine("menu de operaciones");
