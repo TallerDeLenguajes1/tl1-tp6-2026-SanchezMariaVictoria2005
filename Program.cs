@@ -131,19 +131,19 @@ do
                  switch(opcion)
                 {
                 case 1:
-                        Console.WriteLine($"resultado de la suma: {numero1 + numero2}");
+                        Console.WriteLine($"resultado de la suma de {numero1} con {numero2}: {numero1 + numero2}");
                         
                     break;
                 case 2:
-                    Console.WriteLine($"resultado de la resta: {numero1 - numero2}");
+                    Console.WriteLine($"resultado de la resta de {numero1} con {numero2}: {numero1 - numero2}");
                     
                     break;
                 case 3:
-                    Console.WriteLine($"resultado del producto: {numero1 * numero2}");  
+                    Console.WriteLine($"resultado del producto de {numero1} con {numero2}: {numero1 * numero2}");  
                     
                     break;
                 case 4: 
-                    Console.WriteLine($"resultado de la divicion: {numero1 / numero2}");
+                    Console.WriteLine($"resultado de la divicion de {numero1} con {numero2}: {numero1 / numero2}");
                     
                     break;
                 
