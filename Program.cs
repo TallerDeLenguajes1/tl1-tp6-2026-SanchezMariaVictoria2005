@@ -61,6 +61,12 @@ do
 {
 
     Console.WriteLine("menu de operaciones");
+    Console.WriteLine("1-suma");
+    Console.WriteLine("2-resta");
+    Console.WriteLine("3-multiplicacion");
+    Console.WriteLine("4-divir");
+    Console.WriteLine("6-salir");
+    
 
     Console.WriteLine("ingrese una opcion");
     opcionCadena = Console.ReadLine();
