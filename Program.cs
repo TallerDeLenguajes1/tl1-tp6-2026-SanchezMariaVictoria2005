@@ -1,6 +1,6 @@
 ﻿using System.IO.Compression;
 
-Console.WriteLine("Hello, World!");
+/*Console.WriteLine("Hello, World!");
 
 int a;
 int b;
@@ -46,3 +46,19 @@ else
 {
     Console.WriteLine("la cadena ingresada no es un numero");
 }
+
+*/
+
+string cadena;
+string cadena2;
+
+Console.WriteLine("ingresar una cadena de caracteres");
+cadena = Console.ReadLine();
+
+//obtener la longitud de la cadena y mostrarla
+
+int tamanioCadena;
+
+tamanioCadena = cadena.Length;
+
+Console.WriteLine($"tamaño de la cadena: {tamanioCadena}");
