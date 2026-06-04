@@ -50,7 +50,7 @@ else
 */
 
 //obtener la longitud de la cadena y mostrarla funcionando
-
+/*
 string cadena;
 string cadena2;
 
@@ -77,9 +77,9 @@ Console.WriteLine($"cadenas concatenadas: {cadenasConcatenadas}");
 
 string subCadena = cadenasConcatenadas.Substring(cadena.Length); //extraigo la segunda cadena
 
-Console.WriteLine($"subcadena: {subCadena}");
+Console.WriteLine($"subcadena: {subCadena}");*/
 
-//parte de la calculadora 
+//mostrar los resultados de las operaciones en texto 
 
 int opcion;
 string opcionCadena;
@@ -107,16 +107,16 @@ do
             switch(opcion)
             {
                 case 1:
-                        Console.WriteLine($"resultado de la suma de {numero1} y de {numero2} es igual a: {numero1 + numero2}");
+                        Console.WriteLine($"resultado de la suma de {numero1.ToString()} y de {numero2.ToString()} es igual a: {(numero1 + numero2).ToString()}");
                     break;
                 case 2:
-                    Console.WriteLine($"resultado de la resta de {numero1} y de {numero2} es igual a: {numero1 - numero2}");
+                    Console.WriteLine($"resultado de la resta de {numero1.ToString()} y de {numero2.ToString()} es igual a: {(numero1 - numero2).ToString()}");
                     break;
                 case 3:
-                    Console.WriteLine($"resultado del producto de {numero1} y de {numero2} es igual a: {numero1 * numero2}");  
+                    Console.WriteLine($"resultado del producto de {numero1.ToString()} y de {numero2.ToString()} es igual a: {(numero1 * numero2).ToString()}");  
                     break;
                 case 4: 
-                    Console.WriteLine($"resultado de la divicion de {numero1} y de {numero2} es igual a: {numero1 / numero2}");
+                    Console.WriteLine($"resultado de la divicion de {numero1.ToString()} y de {numero2.ToString()} es igual a: {(numero1 / numero2).ToString()}");
                     break;
             }
         }
