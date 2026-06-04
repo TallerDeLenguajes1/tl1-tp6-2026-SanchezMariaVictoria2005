@@ -50,6 +50,7 @@ else
 */
 
 //obtener la longitud de la cadena y mostrarla funcionando
+
 string cadena;
 string cadena2;
 
@@ -61,3 +62,14 @@ int tamanioCadena;
 tamanioCadena = cadena.Length;
 
 Console.WriteLine($"tamaño de la cadena: {tamanioCadena}");
+
+
+//segunda cadena
+
+Console.WriteLine("ingresar una segunda cadena");
+cadena2 = Console.ReadLine();
+
+string cadenasConcatenadas = $"{cadena}{cadena2}";
+
+Console.WriteLine($"cadenas concatenadas: {cadenasConcatenadas}");
+
