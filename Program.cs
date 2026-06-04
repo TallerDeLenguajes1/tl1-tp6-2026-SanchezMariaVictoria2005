@@ -127,7 +127,7 @@ do
 
 */
 
-//recorrer un texto con un foreach y mostrar cada elemento por pantalla 
+//recorrer un texto con un foreach y mostrar cada elemento por pantalla funcionando
 
 Console.WriteLine("ingresar una cadena:");
 string cadena3 = Console.ReadLine();
