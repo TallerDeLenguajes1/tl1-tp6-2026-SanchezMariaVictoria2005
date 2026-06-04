@@ -79,7 +79,7 @@ string subCadena = cadenasConcatenadas.Substring(cadena.Length); //extraigo la s
 
 Console.WriteLine($"subcadena: {subCadena}");*/
 
-//mostrar los resultados de las operaciones en texto 
+//mostrar los resultados de las operaciones en texto funcionando
 
 int opcion;
 string opcionCadena;
