@@ -139,7 +139,7 @@ foreach (var elemento in cadena3)
 }
 */
 
-//ocurrencia de una palabra determinada en una cadena 
+//ocurrencia de una palabra determinada en una cadena funcionando
 Console.WriteLine("ingrese una cadena");
 string cadena4 = Console.ReadLine();
 Console.WriteLine("ingresar una palabra");
