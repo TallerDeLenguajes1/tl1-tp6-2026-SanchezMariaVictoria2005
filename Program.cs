@@ -129,10 +129,27 @@ do
 
 //recorrer un texto con un foreach y mostrar cada elemento por pantalla funcionando
 
+/*
 Console.WriteLine("ingresar una cadena:");
 string cadena3 = Console.ReadLine();
 
 foreach (var elemento in cadena3)
 {
     Console.WriteLine(elemento);
+}
+*/
+
+//ocurrencia de una palabra determinada en una cadena 
+Console.WriteLine("ingrese una cadena");
+string cadena4 = Console.ReadLine();
+Console.WriteLine("ingresar una palabra");
+string palabra = Console.ReadLine();
+
+if (cadena4.IndexOf(palabra) != -1)
+{
+    Console.WriteLine("la palabra ingresada esta en la cadena");
+}
+else
+{
+    Console.WriteLine("la palabra ingresada no esta en la cadena");
 }
