@@ -73,7 +73,7 @@ string cadenasConcatenadas = $"{cadena}{cadena2}";
 
 Console.WriteLine($"cadenas concatenadas: {cadenasConcatenadas}");
 
-//obtener subcadena
+//obtener subcadena funcionando
 
 string subCadena = cadenasConcatenadas.Substring(cadena.Length); //extraigo la segunda cadena
 
