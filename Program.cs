@@ -79,3 +79,46 @@ string subCadena = cadenasConcatenadas.Substring(cadena.Length); //extraigo la s
 
 Console.WriteLine($"subcadena: {subCadena}");
 
+//parte de la calculadora 
+
+int opcion;
+string opcionCadena;
+string numero1C;
+string numero2C;
+int numero1;
+int numero2;
+
+do
+{
+
+    Console.WriteLine("menu de operaciones");
+
+    Console.WriteLine("ingrese una opcion");
+    opcionCadena = Console.ReadLine();
+    
+    if (int.TryParse(opcionCadena, out opcion) && opcionCadena!= "6")
+    {
+        Console.WriteLine("ingresar dos numeros");
+        numero1C = Console.ReadLine();
+        numero2C = Console.ReadLine();
+        if (int.TryParse(numero1C, out numero1) && int.TryParse(numero2C, out numero2))
+        {
+            
+            switch(opcion)
+            {
+                case 1:
+                        Console.WriteLine($"resultado de la suma de {numero1} y de {numero2} es igual a: {numero1 + numero2}");
+                    break;
+                case 2:
+                    Console.WriteLine($"resultado de la resta de {numero1} y de {numero2} es igual a: {numero1 - numero2}");
+                    break;
+                case 3:
+                    Console.WriteLine($"resultado del producto de {numero1} y de {numero2} es igual a: {numero1 * numero2}");  
+                    break;
+                case 4: 
+                    Console.WriteLine($"resultado de la divicion de {numero1} y de {numero2} es igual a: {numero1 / numero2}");
+                    break;
+            }
+        }
+    }
+}while(1 <= opcion && opcion < 6);
