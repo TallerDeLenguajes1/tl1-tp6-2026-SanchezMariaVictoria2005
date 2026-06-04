@@ -140,6 +140,7 @@ foreach (var elemento in cadena3)
 */
 
 //ocurrencia de una palabra determinada en una cadena funcionando
+/*
 Console.WriteLine("ingrese una cadena");
 string cadena4 = Console.ReadLine();
 Console.WriteLine("ingresar una palabra");
@@ -153,3 +154,11 @@ else
 {
     Console.WriteLine("la palabra ingresada no esta en la cadena");
 }
+*/
+
+//convertir cadena a mayuscula y minuscula 
+Console.WriteLine("ingrese una cadena");
+string cadena5 = Console.ReadLine();
+
+Console.WriteLine($"cadena en mayuscula: {cadena5.ToUpper()}");
+Console.WriteLine($"cadena en minuscula: {cadena5.ToLower()}"); 
