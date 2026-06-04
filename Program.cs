@@ -156,7 +156,7 @@ else
 }
 */
 
-//convertir cadena a mayuscula y minuscula 
+//convertir cadena a mayuscula y minuscula funcionando
 Console.WriteLine("ingrese una cadena");
 string cadena5 = Console.ReadLine();
 
