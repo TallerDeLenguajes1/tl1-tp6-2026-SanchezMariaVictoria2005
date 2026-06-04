@@ -49,13 +49,12 @@ else
 
 */
 
+//obtener la longitud de la cadena y mostrarla funcionando
 string cadena;
 string cadena2;
 
 Console.WriteLine("ingresar una cadena de caracteres");
 cadena = Console.ReadLine();
-
-//obtener la longitud de la cadena y mostrarla
 
 int tamanioCadena;
 
