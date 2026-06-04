@@ -81,6 +81,8 @@ Console.WriteLine($"subcadena: {subCadena}");*/
 
 //mostrar los resultados de las operaciones en texto funcionando
 
+
+/*
 int opcion;
 string opcionCadena;
 string numero1C;
@@ -122,3 +124,15 @@ do
         }
     }
 }while(1 <= opcion && opcion < 6);
+
+*/
+
+//recorrer un texto con un foreach y mostrar cada elemento por pantalla 
+
+Console.WriteLine("ingresar una cadena:");
+string cadena3 = Console.ReadLine();
+
+foreach (var elemento in cadena3)
+{
+    Console.WriteLine(elemento);
+}
