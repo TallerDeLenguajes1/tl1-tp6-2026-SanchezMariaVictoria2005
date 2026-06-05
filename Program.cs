@@ -166,7 +166,7 @@ Console.WriteLine($"cadena en minuscula: {cadena5.ToLower()}");
 */
 
 
-//cadena de texto con separadores
+//cadena de texto con separadores funciona
 Console.WriteLine("ingrese una cadena con separadores");
 string cadena6 = Console.ReadLine();
 
