@@ -167,6 +167,7 @@ Console.WriteLine($"cadena en minuscula: {cadena5.ToLower()}");
 
 
 //cadena de texto con separadores funciona
+/*
 Console.WriteLine("ingrese una cadena con separadores");
 string cadena6 = Console.ReadLine();
 
@@ -187,4 +188,78 @@ for (int i = 0 ; i < cadena.Length; i++ )
 {
     Console.WriteLine(cadena[i]);
 }
+*/
 
+//operacion en cadena
+int opcion = 0;
+string numeroC;
+String numero1c;
+string numero2c;
+int numero1;
+int numero2;
+int posicion = 0;
+
+do
+{
+
+    Console.WriteLine("menu de operaciones");
+    Console.WriteLine("1-suma");
+    Console.WriteLine("2-resta");
+    Console.WriteLine("3-multiplicacion");
+    Console.WriteLine("4-division");
+
+    Console.WriteLine("ingresar una operacion entre dos numeros");
+    numeroC = Console.ReadLine();
+    
+        foreach (char caracter in numeroC) //busco los operadores y guardo su posicion
+        {
+            switch (caracter)
+            {
+                case '+':
+                    opcion = 1;
+                    posicion = numeroC.IndexOf('+');
+                break;
+
+                case '-':
+                    opcion = 2;
+                    posicion = numeroC.IndexOf('-');
+                break;
+
+                case '*':
+                    opcion = 3;
+                    posicion = numeroC.IndexOf('*');
+                break ;
+
+                case '/':
+                    opcion = 4;
+                    posicion = numeroC.IndexOf('/');
+                break;
+            }
+        }
+
+        numero1c = numeroC.Substring(0, posicion);
+        numero2c = numeroC.Substring(posicion);
+
+        if(int.TryParse(numero1c, out numero1) && int.TryParse(numero2c, out numero2)){
+
+
+            
+            switch(opcion)
+            {
+                case 1:
+                        Console.WriteLine($"resultado de la suma de {numero1.ToString()} y de {numero2.ToString()} es igual a: {(numero1 + numero2).ToString()}");
+                    break;
+                case 2:
+                    Console.WriteLine($"resultado de la resta de {numero1.ToString()} y de {numero2.ToString()} es igual a: {(numero1 - numero2).ToString()}");
+                    break;
+                case 3:
+                    Console.WriteLine($"resultado del producto de {numero1.ToString()} y de {numero2.ToString()} es igual a: {(numero1 * numero2).ToString()}");  
+                    break;
+                case 4: 
+                    Console.WriteLine($"resultado de la divicion de {numero1.ToString()} y de {numero2.ToString()} es igual a: {(numero1 / numero2).ToString()}");
+                    break;
+            }
+        }
+        
+    
+}while(1 <= opcion && opcion < 6);
