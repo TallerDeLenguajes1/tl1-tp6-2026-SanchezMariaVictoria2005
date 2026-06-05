@@ -262,4 +262,4 @@ do
         }
         
     
-}while(1 <= opcion && opcion < 6);
+}while(1 <= opcion && opcion < 6 && posicion != 0);
