@@ -157,8 +157,34 @@ else
 */
 
 //convertir cadena a mayuscula y minuscula funcionando
+/*
 Console.WriteLine("ingrese una cadena");
 string cadena5 = Console.ReadLine();
 
 Console.WriteLine($"cadena en mayuscula: {cadena5.ToUpper()}");
 Console.WriteLine($"cadena en minuscula: {cadena5.ToLower()}"); 
+*/
+
+
+//cadena de texto con separadores
+Console.WriteLine("ingrese una cadena con separadores");
+string cadena6 = Console.ReadLine();
+
+char separador = ' ' ;
+
+foreach (char letra in cadena6)
+{
+    if (!char.IsLetter(letra) && !char.IsDigit(letra))
+    {   
+        separador = letra;
+    }
+    
+}
+
+string [] cadena = cadena6.Split(separador);
+
+for (int i = 0 ; i < cadena.Length; i++ )
+{
+    Console.WriteLine(cadena[i]);
+}
+
