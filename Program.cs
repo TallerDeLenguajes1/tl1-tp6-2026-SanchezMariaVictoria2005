@@ -190,7 +190,7 @@ for (int i = 0 ; i < cadena.Length; i++ )
 }
 */
 
-//operacion en cadena
+//operacion en cadena funciona
 int opcion = 0;
 string numeroC;
 String numero1c;
